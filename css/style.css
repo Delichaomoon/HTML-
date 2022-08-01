@@ -48,7 +48,8 @@ table {
     font-family: 'Noto Sans TC',sans-serif;
 }
 .wrap{
-    margin:auto
+    margin:auto;
+    max-width: 1000px;
 }
 
 /*社群連結和選單*/
@@ -128,8 +129,8 @@ table {
     top: 30%;
     background-color: rgba(0,0,0,0.3);
     background-size:cover;
-    width: 95.5%;
-    padding: 35px 30px;
+    width: 95%;
+    padding: 0 25px;
     margin: auto;
     line-height: 1.4;
 }
@@ -205,4 +206,81 @@ table {
 
 .comparison tr:hover{
     background: #eee;
+}
+
+/*聯絡我們*/
+
+.contact {
+    padding: 40px 30px 20px;
+    background: linear-gradient(180deg, #00654a, #009972);
+    color: #fff;
+    margin-bottom: 27px;
+}
+.contact h2{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.contact form{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+.contact form textarea{
+    margin-right: 20px;
+    width: 50%;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    line-height: 1.2;
+    padding: 7px 5px;
+}
+.contact form .user-info{
+    margin-left: 20px;
+    width: 50%;
+}
+.contact .user-info .input-group{
+    margin-bottom: 16px;
+}
+.contact .input-group label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.contact .input-group input{
+    width: 100%;
+    padding: 7px 5px;
+    font-size: 16px;    
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.contact input[type='submit']{
+    background: #00cc98;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    outline: none;
+    cursor: pointer;
+}
+.contact input[type='submit']:hover{
+    background: #74ffdf;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 22px 50px;
+}
+footer .contact-us li{
+    margin-bottom: 10px;
+}
+footer .contact-us .highlight{
+    color:#cd3b72;
+    text-decoration: none;
 }
